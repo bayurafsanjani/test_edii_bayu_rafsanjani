@@ -1,0 +1,92 @@
+// Create User
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "email": "john@gmail.com",
+    "password": "123456",
+    "confPassword": "123456",
+    "role": "user"
+}
+
+###
+// Get All Users
+GET http://localhost:5000/users
+
+###
+//Get single user
+GET http://localhost:5000/users/d7aa5724-08e5-4450-abc2-90266a1a2fb8
+
+###
+//Update a user
+GET http://localhost:5000/users/d7aa5724-08e5-4450-abc2-90266a1a2fb8
+Content-Type: application/json
+
+{
+    "name": "John Updated",
+    "email": "john@gmail.com",
+    "password": "",
+    "confPassword": "",
+    "role": "user"
+}
+
+###
+//Delete a user
+DELETE http://localhost:5000/users/974d57e9-a858-477d-8829-079f9aa5984a
+
+###
+//Login Admin
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "bayurafsanjani@gmail.com",
+    "password": "577577"
+}
+
+###
+//Login User
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "john@gmail.com",
+    "password": "123456"
+}
+
+###
+GET http://localhost:5000/me
+
+###
+DELETE http://localhost:5000/logout
+
+###
+//Get All Data
+GET http://localhost:5000/datas
+
+###
+//Get single product
+GET http://localhost:5000/datas/c89409b7-90f8-48b2-a54e-6e3105a6084f
+
+###
+//POST data product
+POST http://localhost:5000/datas
+content-Type: application/json
+
+{
+    "name": "kamen rider saber",
+    "ktp":"12345678",
+    "birthday":"04 Februari 1990",
+    "sex": "laki-laki",
+    "religion": "islam",
+    "blood": "A",
+    "status": "menikah",
+    "add_ktp": "Bekasi",
+    "address": "Bekasi",
+    "email": "coba@gmail.com",
+    "phone": "23456789",
+    "skill": "IT",
+    "placement": "Belitung",
+    "salary": "4000000"
+}
