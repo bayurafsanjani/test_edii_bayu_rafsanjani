@@ -3,3 +3,5 @@ Back End
 - Selama beberapa menit apabila user tidak aktif maka akan otomatis logout
 - User hanya bisa create biodata dan hanya bisa melihat data yang sesuai dengan usernya
 - Untuk bisa melihat semua data user harus login sesuai admin terlebih dahulu.
+- Bisa searh sesuai dengan unique ID
+- password sudah dihash didalam database
